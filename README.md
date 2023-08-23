@@ -5,9 +5,11 @@
 ### Team Members:
 - [Rajesh Reddy](https://github.com/rredd002)
 
+## Overview
+This project looks to analyze and predict stock price data for Amazon from 2000 - 2020. We hope to use these predictions to make strategic investments in the future.
   
 ## Business Situation
-A financial services company is seeking to enhance their portfolio management strategies by accurately predicting stock prices. They are looking to develop a robust and reliable stock price prediction model that can provide actionable insights for their investment decisions. The company manages a diverse portfolio of stocks for their clients and aims to maximize returns while minimizing risks.
+EquiWealth Financial Solutions is seeking to enhance their portfolio management strategies by accurately predicting stock prices. They are looking to develop a robust and reliable stock price prediction model that can provide actionable insights for their investment decisions. The company manages a diverse portfolio of stocks for their clients and aims to maximize returns while minimizing risks.
 
 
 ## Data Overview
@@ -30,8 +32,8 @@ We created several new columns to assist in our analysis
   
 - 50 day moving average had RMSE of 135.39 and 200 day moving average had RMSE of 304.88
 - We then decided to use LSTM to more accurately predict the day to day shifts in the stock price
-- Initial run of the model using hyperparameters of epoch = 1 and batch size = 1 resulted in RMSE of 99.87
-- After some experimenting, the final model we usesd was epoch = 15 and batch size = 10
+- Initial run of the model using hyperparameters of epoch = 1 and batch size = 1 resulted in RMSE of 47.58
+- After some experimenting, the final model we used was epoch = 15 and batch size = 10
 
 ![image](./images/final_LSTM_model.png)  
 
@@ -52,12 +54,14 @@ We were able to get an RMSE of 33.55 using 15 epochs and a batch size of 10. If 
 ### Repository Structure
 ├── images
 
+├── README.md
+
 ├── gitignore.txt
+
+├── Stock Price Predictions (1).pdf
 
 ├── Stock_Price_Prediction_notebook.ipynb
 
-├── README.md 
+├── Stock_Price_Prediction_notebook.ipynb 
 
 ├── daily_adjusted_AMZN.csv
-
-├── presentation.pdf
